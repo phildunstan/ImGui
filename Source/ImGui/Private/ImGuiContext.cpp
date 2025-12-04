@@ -387,6 +387,12 @@ void FImGuiContext::Initialize()
 		IO.Fonts->AddFontFromFileTTF(TCHAR_TO_UTF8(*FontPath), 16);
 	}
 
+	const FString MonoFontPath = FPaths::EngineContentDir() / TEXT("Slate/Fonts/DroidSansMono.ttf");
+	if (FPaths::FileExists(*MonoFontPath))
+	{
+		IO.Fonts->AddFontFromFileTTF(TCHAR_TO_UTF8(*MonoFontPath), 16);
+	}
+
 	if (FSlateApplication::IsInitialized())
 	{
 #if PLATFORM_DESKTOP
