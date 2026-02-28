@@ -1,6 +1,7 @@
 ﻿#include "SImGuiOverlay.h"
 
 #include <Framework/Application/SlateApplication.h>
+#include "Framework/Application/SlateUser.h"
 
 #include "ImGuiContext.h"
 
