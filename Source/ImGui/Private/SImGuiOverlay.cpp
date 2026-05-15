@@ -5,6 +5,7 @@
 #include <Framework/Application/SlateApplication.h>
 
 #include "ImGuiContext.h"
+#include "Framework/Application/SlateUser.h"
 
 FImGuiDrawList::FImGuiDrawList(ImDrawList* Source)
 {
